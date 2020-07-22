@@ -18,29 +18,6 @@
   width: 100%;
   display: block;
 }
-@media screen and (max-width: 768px) {
-  h4 {
-    font-size: 1.3rem;
-  }
-
-  h5 {
-    font-size: 1.1rem;
-  }
-
-  .experience-location,
-  .experience-date {
-    display: none;
-  }
-
-  .colorlib-experience {
-    padding-top: 5em;
-    padding-bottom: 8em;
-  }
-
-  .timeline-icon {
-    margin-right: 1rem;
-  }
-}
 
 .timeline-entry {
   position: relative;
@@ -164,4 +141,36 @@
   font-size: 1.3em;
   font-weight: 500;
   font-family: "Quicksand", Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  .experience-location,
+  .experience-date {
+    display: none;
+  }
+
+  .colorlib-experience {
+    padding-top: 5em;
+    padding-bottom: 8em;
+  }
+
+  .timeline-icon {
+    display: none !important;
+  }
+
+  .timeline-entry {
+    margin-left: 0;
+  }
+
+  .timeline-entry .timeline-entry-inner {
+    margin-left: 0;
+  }
 }
