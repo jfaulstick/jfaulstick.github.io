@@ -31,8 +31,10 @@ export const DownloadButton = (props) => {
 };
 
 export const Skill = (props) => {
+  const color = props.color || 'bg-blue-500';
+
 	return (
-		<div className="text-lg font-bold text-center bg-blue-300 rounded mx-1 my-1 px-1">{props.label}</div>
+		<div className={`${props.color ? props.color : "bg-blue-500"} text-lg font-bold text-center text-white rounded-full mx-1 my-1 px-1`}>{props.label}</div>
 	)
 }
 
@@ -109,18 +111,18 @@ export default function Home() {
           </div>
 
           <div className="w-full lg:w-1/2 grid grid-cols-1 lg:grid-cols-3 items-center pb-12">
-            <Skill label="HTML" />
-            <Skill label="CSS" />
-            <Skill label="Sass / PostCSS" />
-            <Skill label="JavaScript" />
+            <Skill label="HTML" color="bg-orange-500" />
+            <Skill label="CSS"  />
+            <Skill label="Sass / PostCSS" color="bg-green-600" />
+            <Skill label="JavaScript" color="bg-orange-500" />
             <Skill label="TypeScript" />
-            <Skill label="React" />
-            <Skill label="AngularJS / Angular" />
+            <Skill label="React" color="bg-green-600" />
+            <Skill label="AngularJS / Angular" color="bg-orange-500" />
             <Skill label="jQuery" />
-            <Skill label="Jest / Jasmine / Karma" />
-            <Skill label="NodeJS" />
+            <Skill label="Jest / Jasmine / Karma" color="bg-green-600" />
+            <Skill label="NodeJS" color="bg-orange-500"/>
             <Skill label="MongoDB" />
-            <Skill label="MySQL" />
+            <Skill label="MySQL" color="bg-green-600" />
           </div>
         </div>
       </section>

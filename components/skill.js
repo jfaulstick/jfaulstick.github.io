@@ -18,7 +18,7 @@ export const Skill = (props) => {
   }
 
   return (
-    <div className="grid grid-cols-10 w-2/6 rounded-sm">
+    <div className="grid grid-cols-10 w-2/6 rounded">
       {skillBar}
     </div>
   )
